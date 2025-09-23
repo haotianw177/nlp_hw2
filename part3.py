@@ -133,14 +133,11 @@ Notes:
 -----------------------------------------------------------------------------
 for each line from stdin:
   tokens = line.split()
-  orig_tokens = tokens[:]
-  unk_tokens = [t if t in vocab else "<unk>" for t in tokens]
-
   tags = run_pos_tagger(orig_tokens)
 
   initialize empty chart/backptr
 
-  # diagonal init using tags + lexical PCFG
+  # diagonal init
   for i in range(n):
     fill chart[(i, i+1)] and backptr[(i, i+1)] with POS entries
 
