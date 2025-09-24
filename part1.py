@@ -102,7 +102,7 @@ if __name__ == '__main__':
 	* Initialize the model with training data, embedding dim 128, and hidden dim 256.
 	* Train the model, calling fit(), on the training data.
 	* Test the model, calling evaluate(), on the validation and test data.
-	* Predict outputs for the examples in response.txt.
+	* Predict outputs for the first ten examples in test.pos.
 	* Remove all instances of `raise NotImplementedError`!
 	"""
 	raise NotImplementedError
