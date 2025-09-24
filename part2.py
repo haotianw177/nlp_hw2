@@ -10,5 +10,9 @@ counts = collections.defaultdict(collections.Counter)
 	* Goal: end up with three dictionaries, counts, probs, and cfg. 
 		* counts has entries count[LHS][RHS], like count[NP][(DT, NN)].
 		* probs has entries prob[LHS][RHS] = count[LHS][RHS] / sum(count[LHS].values())
-		* cfg simply has the rules of the grammar, stored using whichever structure is usable to you for your CKY implementation. For instance, indexing by RHS may be easier to look up for CKY (cfg[RHS][LHS]."""
+		* cfg simply has the rules of the grammar, stored using whichever structure is usable to you for your CKY implementation. For instance, indexing by RHS may be easier to look up for CKY (cfg[RHS][LHS].
+		* To include terminal words as POS_t (e.g., NN_t) as you're constructing the CFG: 
+			if len(node.children) == 1: # terminal rules
+				rhs = (node.label.split('_')[-1]+'_t',) # rhs = (NN_t,)
+"""
 raise NotImplementedError
