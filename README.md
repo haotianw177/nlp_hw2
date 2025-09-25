@@ -13,6 +13,6 @@ Please find the homework assignment instructions [here](https://docs.google.com/
 * Free Response: Did the most frequent rules surprise you? Why or why not?
 
 ## Part 3
-* CKY accuracy using gold POS tags:
-* CKY accuracy using predicted POS tags:
+* CKY parses using gold POS tags:
+* CKY parses using predicted POS tags:
 * Free response:
