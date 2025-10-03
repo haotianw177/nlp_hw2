@@ -4,6 +4,7 @@ Please find the homework assignment instructions [here](https://docs.google.com/
 
 ## Part 1
 * Model accuracy: Validation Accuracy: 0.9739, Test Accuracy: 0.9677
+* Link to saved model: https://drive.google.com/drive/u/6/folders/1c-85jfrs3_gYKizjWqU-3c8QvcR9r1au
 
 * Free response:
 
@@ -104,7 +105,10 @@ c. Top 5 highest probability NP rules:
    3. NP -> DT NN : 0.1014
    4. NP -> DT NNS : 0.0855
    5. NP -> DT NP* : 0.0841
+
 * Free Response: Did the most frequent rules surprise you? Why or why not?
+
+The most frequent rules did not surprise me. All top five rules are terminal rules (mapping POS tags to terminal symbols), which makes sense because every word in the treebank is associated with a POS tag. Tags like IN (prepositions), PUNC (punctuation), NNP (proper nouns), and NN (common nouns) are very common in English text, so their high frequency is logical. 
 
 ## Part 3
 * CKY parses using gold POS tags:
